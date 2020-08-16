@@ -1,0 +1,155 @@
+html {
+    background-color: rgb(31, 0, 5);
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    height: 95vh;
+    width: 50vw;
+    background-color: rgb(54, 0, 9);
+    border: solid 5px rgb(24, 0, 0);
+    color: rgb(255, 179, 136);
+}
+
+div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: ". ." ". .";
+    a {
+        &:link {
+            padding: 25%;
+            color: rgb(255, 179, 136);
+            text-decoration: none;
+            text-align: center;
+            font-size: 2em;
+            border: solid 1px rgb(24, 0, 0);
+            width: 50%;
+        }
+        &:hover {
+            background-color: rgba(116, 0, 0, 0.342);
+        }
+        &:visited {
+            padding: 25%;
+            color: rgb(255, 179, 136);
+            text-decoration: none;
+            text-align: center;
+            font-size: 2em;
+            border: solid 1px rgb(24, 0, 0);
+            width: 50%;
+        }
+    }
+}
+
+section {
+    text-align: center;
+    width: 100%;
+    border: solid 5px rgb(24, 0, 0);
+    margin-top: 5px;
+    &:hover {
+        background-color: rgba(116, 0, 0, 0.342);
+    }
+    a {
+        &:link {
+            color: rgb(255, 179, 136);
+            text-decoration: none;
+            text-align: center;
+            font-size: 3em;
+        }
+        &:visited {
+            color: rgb(255, 161, 107);
+            text-decoration: none;
+            text-align: center;
+            font-size: 3em;
+        }
+    }
+}
+
+h1 {
+    text-align: center;
+    a {
+        &:link {
+            color: rgb(255, 179, 136);
+            text-decoration: none;
+            text-align: center;
+            font-size: 1em;
+        }
+        &:visited {
+            color: rgb(255, 179, 136);
+            text-decoration: none;
+            text-align: center;
+            font-size: 1em;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    * {
+        box-sizing: border-box;
+    }
+    /* passer body (et tous les éléments de largeur fixe) en largeur automatique */
+    body {
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+    /* fixer une largeur maximale de 100% aux éléments potentiellement problématiques */
+    img,
+    table,
+    td,
+    blockquote,
+    code,
+    pre,
+    textarea,
+    input,
+    iframe,
+    object,
+    embed,
+    video {
+        max-width: 100%;
+    }
+    /* conserver le ratio des images */
+    img {
+        height: auto;
+    }
+    /* gestion des mots longs */
+    textarea,
+    table,
+    td,
+    th,
+    code,
+    pre,
+    samp {
+        -webkit-hyphens: auto;
+        /* césure propre */
+        -moz-hyphens: auto;
+        hyphens: auto;
+        word-wrap: break-word;
+        /* passage à la ligne forcé */
+    }
+    code,
+    pre,
+    samp {
+        white-space: pre-wrap;
+        /* passage à la ligne spécifique pour les éléments à châsse fixe */
+    }
+    /* Passer à une seule colonne (à appliquer aux éléments multi-colonnes) */
+    .element1,
+    .element2 {
+        float: none;
+        width: auto;
+    }
+    /* masquer les éléments superflus */
+    .hide_mobile {
+        display: none !important;
+    }
+    /* Un message personnalisé */
+    body:before {
+        display: block;
+        text-align: center;
+        font-style: italic;
+        color: #777;
+    }
+}
