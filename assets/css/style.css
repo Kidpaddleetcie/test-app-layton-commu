@@ -13,6 +13,28 @@ body {
   color: #ffb388;
 }
 
+header h1 {
+  margin: 0;
+}
+
+header a:link {
+  color: #ffb388;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2em;
+}
+
+header a:hover {
+  background-color: rgba(116, 0, 0, 0.342);
+}
+
+header a:visited {
+  color: #ffb388;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2em;
+}
+
 div {
   display: -ms-grid;
   display: grid;

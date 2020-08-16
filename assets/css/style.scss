@@ -12,6 +12,29 @@ body {
     color: rgb(255, 179, 136);
 }
 
+header {
+    h1 {
+        margin: 0;
+    }
+    a {
+        &:link {
+            color: rgb(255, 179, 136);
+            text-decoration: none;
+            text-align: center;
+            font-size: 2em;
+        }
+        &:hover {
+            background-color: rgba(116, 0, 0, 0.342);
+        }
+        &:visited {
+            color: rgb(255, 179, 136);
+            text-decoration: none;
+            text-align: center;
+            font-size: 2em;
+        }
+    }
+}
+
 div {
     display: grid;
     grid-template-columns: 1fr 1fr;
